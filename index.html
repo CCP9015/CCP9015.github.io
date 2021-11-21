@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="./cat.png">
     <link rel="bookmark" href="./cat.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("#btn").click(function(){
+            $("#ph1").fadeToggle("slow");
+            $("#ph2").fadeToggle("slow");
+            $("#ph3").fadeToggle("slow");
+            $("#ph4").fadeToggle("slow");
+            });
+ 
+        });
+    
+    </script>
 </head>
 <body style="background-color: azure;">
     <div>
@@ -27,14 +41,19 @@
         性別：♂
     </p>
     <p>
-        <a href="https://409570250.wixsite.com/website">更多蜜豆奶的故事</a>
+        <button type="button" style="background-color: bisque; border-radius: 30%;"  onclick="window.open('https://409570250.wixsite.com/website' , '_blank')"><p>更多蜜豆奶資訊</p></button>
+        <button type="button" id="btn" style="border-radius: 30%; background-color: blanchedalmond;"><p>隱藏蜜豆奶的黑歷史</p></button>
     </p>
     <div>
         <div class="mm" align=center>
-                <img src="1.JPG" / width=250px>
-                <img src="2.PNG" / width=270px>
-                <img src="3.jpg" / width=260px>
-                <img src="4.jpg" / width=290px>
+                <img src="1.JPG" alt="蜜豆奶照片" width=250px>
+                <img src="2.PNG" alt="蜜豆奶照片" width=270px>
+                <img src="3.jpg" alt="蜜豆奶照片" width=260px>
+                <img src="4.jpg" alt="蜜豆奶照片" width=290px>
+                <img id="ph1" src="./5.jpg" alt="蜜豆奶照片" width=250px>
+                <img id="ph2" src="./6.jpg" alt="蜜豆奶照片" width=270px>
+                <img id="ph3" src="./7.jpg" alt="蜜豆奶照片" width=260px>
+                <img id="ph4" src="./8.jpg" alt="蜜豆奶照片" width=290px>
         </div>
 </body>
 </html>
